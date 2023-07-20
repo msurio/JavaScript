@@ -87,7 +87,7 @@ console.log(typeof isIsland, typeof population, typeof country, typeof language)
 
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 //let, const, and var
 //let --> allows to mutate data / value
 //should only use if you know if value is going to change
@@ -114,8 +114,18 @@ job = 'teacher';
 
 //Let, Const, and Var Practice:
 const language = 'English';
+// language = 'tagalog';
+// console.log(language); --> doesn't work because value can NOT be changed
 var homeCountry = 'United States';
-
+console.log(homeCountry);
+homeCountry = 'Philippines';
+console.log(homeCountry); // Can be updated and redeclared
+let profession = 'Sous Chef';
+console.log(profession);
+profession = 'Programmer'
+console.log(profession); // can be updated
+// let profession = 'Programmer'; --> can NOT be redeclared
+*/
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 //Basic Operators:
