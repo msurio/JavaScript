@@ -127,7 +127,7 @@ console.log(profession); // can be updated
 // let profession = 'Programmer'; --> can NOT be redeclared
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 //Basic Operators:
 const now = 2037
 const ageJonas = now - 1996;
@@ -156,3 +156,29 @@ console.log(x);
 
 x--; // x = x - 1 --> 101 - 1 = 100
 console.log(x);
+
+//Basic Operator Practice:
+let population = 10000000 //using let because the value is constantly changing and is not a permanent value
+console.log(population / 2);
+population++;
+console.log(population);
+
+const finlandPopulation = 6000000;
+if (population > finlandPopulation) {
+    console.log(true, 'Your country population has more than Finland');
+} else { console.log(false, 'Your country population is less than Finland'); }
+
+const averagePopulation = 33000000;
+if (population > averagePopulation) {
+    console.log(true, 'Your country population is higher than the average population');
+} else { console.log(false, 'Your country population is less than the average population'); }
+
+let description;
+const continent = 'Europe';
+const country = 'Portugal';
+population = 11000000;
+let language = 'Portugese';
+description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+console.log(description);
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
