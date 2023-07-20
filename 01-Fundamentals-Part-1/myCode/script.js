@@ -210,3 +210,33 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 //follows PEMDAS, without the parenthesis, ageSarah / 2 takes precedence first.
 */
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+//Coding Challenge 1:
+let markMass, johnMass, markHeight, johnHeight;
+let markBMI, johnBMI;
+//using let because the values will change based on dataset
+
+//Data Set 1:
+markMass = 78;
+markHeight = 1.69;
+markBMI = markMass / markHeight ** 2; // mass divided by height to the power of 2 -> mass / (heght*height)
+console.log(markBMI);
+
+johnMass = 92;
+johnHeight = 1.95;
+johnBMI = johnMass / johnHeight ** 2;
+console.log(johnBMI);
+
+
+//Data Set 2:
+markMass = 95;
+markHeight = 1.88;
+markBMI = markMass / markHeight ** 2;
+console.log(markBMI);
+
+johnMass = 85;
+johnHeight = 1.76;
+johnBMI = johnMass / johnHeight ** 2;
+console.log(johnBMI);
+//////////////////////////////////////////////////////////////////////////////////////////////
