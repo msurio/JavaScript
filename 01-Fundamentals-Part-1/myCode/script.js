@@ -129,9 +129,9 @@ console.log(profession); // can be updated
 //////////////////////////////////////////////////////////////////////////////////////////////
 /*
 //Basic Operators:
-const now = 2037
+const now = 2037;
 const ageJonas = now - 1996;
-const ageSarah = now - 1995;
+const ageSarah = now - 1997;
 console.log(ageJonas, ageSarah);
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 //2 ** 3 means 2 to the power of 3 --> 2 * 2 *2
@@ -157,6 +157,12 @@ console.log(x);
 x--; // x = x - 1 --> 101 - 1 = 100
 console.log(x);
 
+//comparison operators: >, <, >=, <=
+console.log(ageJonas > ageSarah);
+console.log(ageSarah >= 18); // greater than or equal to 18
+
+const isFullAge = ageSarah >= 18;
+console.log(now - 1996 > now - 1995);
 //Basic Operator Practice:
 let population = 10000000 //using let because the value is constantly changing and is not a permanent value
 console.log(population / 2);
@@ -182,3 +188,25 @@ description = country + ' is in ' + continent + ', and its ' + population + ' mi
 console.log(description);
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
+/*
+//Operator Precedence:
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+//look at MDM Precedence Operator to understand how JavaScript understand what goes first
+//the '>' and '<' has a lower precedence than the math operators
+
+// console.log(25 - 10 - 5);
+//left to right operation
+
+let x, y;
+x = y = 25 - 10 - 5; //x = y = 10 -> y = 10, x = 10 -> 10, 10
+console.log(x, y);
+//right to left operation
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+//follows PEMDAS, without the parenthesis, ageSarah / 2 takes precedence first.
+*/
