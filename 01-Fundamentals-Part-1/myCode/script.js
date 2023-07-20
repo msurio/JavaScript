@@ -1,7 +1,5 @@
-let js = 'amazing';
-console.log(40 + 8 + 23 - 10);
-
 //////////////////////////////////////////////////////////////////////////////////////////////
+/*
 //Values & Varables
 //values example:
 console.log('Jonas');
@@ -28,6 +26,8 @@ console.log(country);
 console.log(continent);
 console.log(population);
 
+*/
+
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 /*value --> Obejct or Primitive
@@ -47,6 +47,7 @@ console.log(population);
         Value has type, NOT variable
 */
 
+/*
 //Boolean
 true;
 let javaScriptIsFun = true;
@@ -83,6 +84,8 @@ let language;
 console.log(isIsland, population, country, language);
 console.log(typeof isIsland, typeof population, typeof country, typeof language);
 
+
+*/
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 //let, const, and var
@@ -108,6 +111,10 @@ job = 'teacher';
 // console.log(job); looks similar as 'let', but is significantly different
 //should always define a variable properly : let, var, or const
 //highly not recommended to use var
+
+//Let, Const, and Var Practice:
+const language = 'English';
+var homeCountry = 'United States';
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
