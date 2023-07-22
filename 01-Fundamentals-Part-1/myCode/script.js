@@ -245,7 +245,7 @@ console.log(markBMI, johnBMI);
 
 const markNewBMI = markHigherMass / markHigherHeight ** 2;
 const johnNewBMI = johnLowerMass / johnLowerHeight ** 2;
-console.log(markNewBMI, johnBMI);
+console.log(markNewBMI, johnNewBMI);
 
 //boolean variable:
 const markHigherBMI = markNewBMI > johnNewBMI;
@@ -253,3 +253,41 @@ console.log(markHigherBMI);
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 //string & template literals
+/*
+const firstName = 'Marc';
+const job = 'Programmer';
+const birthYear = 1996;
+const currentYear = 2023;
+
+const marc = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' years old ' + job + '!';
+console.log(marc);
+
+//the template literal format:
+const marcNew = `I'm ${firstName} a ${currentYear - birthYear} year old ${job}!`;
+console.log(marcNew);
+
+console.log(`Just a regular string...`);
+
+console.log(`String with \n\ multiple \n\ lines`);
+// \n = new line
+
+console.log(`string
+multiple
+lines`);
+//another way to create multi-line strigs.
+
+//String & Template Literal Practice:
+let description;
+const continent = 'Europe';
+const country = 'Portugal';
+population = 11000000;
+let language = 'Portugese';
+description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
+console.log(description);
+
+//the template literal version:
+description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description);
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
+
