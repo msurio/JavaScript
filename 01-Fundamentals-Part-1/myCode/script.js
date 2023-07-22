@@ -213,30 +213,43 @@ console.log(ageJonas, ageSarah, averageAge);
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 //Coding Challenge 1:
-let markMass, johnMass, markHeight, johnHeight;
-let markBMI, johnBMI;
-//using let because the values will change based on dataset
+/*
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both
+versions)
+3. Create a Boolean variable 'markHigherBMI' containing information about
+whether Mark has a higher BMI than John.
 
-//Data Set 1:
-markMass = 78;
-markHeight = 1.69;
-markBMI = markMass / markHeight ** 2; // mass divided by height to the power of 2 -> mass / (heght*height)
-console.log(markBMI);
+Test data:
+§ Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
+m tall.
+§ Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
+m tall.
+*/
 
-johnMass = 92;
-johnHeight = 1.95;
-johnBMI = johnMass / johnHeight ** 2;
-console.log(johnBMI);
+//data set 1:
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
 
+//data set 2:
+const markHigherMass = 95;
+const markHigherHeight = 1.95;
+const johnLowerMass = 85;
+const johnLowerHeight = 1.76;
 
-//Data Set 2:
-markMass = 95;
-markHeight = 1.88;
-markBMI = markMass / markHeight ** 2;
-console.log(markBMI);
+const markBMI = markMass / markHeight ** 2
+const johnBMI = johnMass / johnHeight ** 2
+console.log(markBMI, johnBMI);
 
-johnMass = 85;
-johnHeight = 1.76;
-johnBMI = johnMass / johnHeight ** 2;
-console.log(johnBMI);
+const markNewBMI = markHigherMass / markHigherHeight ** 2;
+const johnNewBMI = johnLowerMass / johnLowerHeight ** 2;
+console.log(markNewBMI, johnBMI);
+
+//boolean variable:
+const markHigherBMI = markNewBMI > johnNewBMI;
+console.log(markHigherBMI);
 //////////////////////////////////////////////////////////////////////////////////////////////
+
+//string & template literals
