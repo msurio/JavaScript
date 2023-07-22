@@ -362,7 +362,59 @@ console.log('Who has the higher BMI? Mark or John?')
 if(BMIMark > BMIJohn){
     console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`);
 }else{
-    console.log(`John's (${BMIJohn}) is higher than Mark's BMI (${BMIMark})  `);
+    console.log(`John's (${BMIJohn}) is higher than Mark's BMI (${BMIMark})`);
 }
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
+
+//Type Conversion & Coercion:
+/*
+//type conversion:
+const inputYear = '1996'
+console.log(Number(inputYear), inputYear); //turns string into a numerical value
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18)
+
+console.log(Number('Marc')); //produces NaN (Not a Number);
+console.log(typeof NaN); //Number / type of number
+
+console.log(String(23), 23); //turns a numerical value into a string
+
+//JavaScript allows conversion to a number, string, or boolean.
+
+//type coercion:
+    //dealing with values with different types
+console.log('I am ' + 23 + ' years old'); //number converted into a string
+console.log('I am ' + '23' + ' years old'); //the literal translation of what JavaScript does to the example above
+
+console.log('23' - '10' - 3); //converted strings into numerical values due to the minus operator
+
+console.log('23' + '10' + 3); //the + operator turns all numerical values into a string
+
+console.log('23' / '2', '23' * '2'); //the / and * operator automatically converts to numerical value because that is the only way that it would work.
+
+let n = '1' + 1; //console.log results in  a string of 11
+n = n - 1; // converts the string above into a number which results into 10
+console.log(n);
+
+console.log(2+3+4+'5'); //console.log(95) numerical value of 9 and a string of 5 --> 95
+
+console.log('10' - '4' - '3' - 2 +'5'); //console.log(15) --> numerical value is 1 and a string of 5 --> 15
+
+// Type Conversion and Coercion Practice:
+// Predict the result of these 5 operations without executing them:
+// '9' - '5'; --> 4
+// '19' - '13' + '17'; --> 617
+// '19' - '13' + 17; --> 23
+// '123' < 57; --> false
+// 5 + 6 + '4' + 9 - 4 - 2; --> 1143
+// 2. Execute the operations to check if you were right
+
+console.log('9' - '5');
+console.log('19' - '13' + '17');
+console.log('19' - '13' + 17);
+console.log('123' < 57);
+console.log(5 + 6 + '4' + 9 - 4 - 2);
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
+
