@@ -211,9 +211,9 @@ console.log(ageJonas, ageSarah, averageAge);
 //follows PEMDAS, without the parenthesis, ageSarah / 2 takes precedence first.
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
-
-//Coding Challenge 1:
 /*
+//Coding Challenge 1:
+
 1. Store Mark's and John's mass and height in variables
 2. Calculate both their BMIs using the formula (you can even implement both
 versions)
@@ -225,7 +225,7 @@ Test data:
 m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 m tall.
-*/
+
 
 //data set 1:
 const markMass = 78;
@@ -250,6 +250,7 @@ console.log(markNewBMI, johnNewBMI);
 //boolean variable:
 const markHigherBMI = markNewBMI > johnNewBMI;
 console.log(markHigherBMI);
+*/
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 //string & template literals
@@ -337,5 +338,31 @@ if (population > 33){
 }
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 //Coding Challenge #2:
+
+Your tasks:
+1. Print a nice output to the console, saying who has the higher BMI. The message
+is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+BMI (28.3) is higher than John's (23.9)!"
+
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark ** 2);
+const BMIJohn = massJohn / (heightJohn ** 2);
+console.log(BMIMark, BMIJohn);
+
+console.log('Who has the higher BMI? Mark or John?')
+
+if(BMIMark > BMIJohn){
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`);
+}else{
+    console.log(`John's (${BMIJohn}) is higher than Mark's BMI (${BMIMark})  `);
+}
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
