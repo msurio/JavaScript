@@ -393,7 +393,7 @@ console.log('23' + '10' + 3); //the + operator turns all numerical values into a
 
 console.log('23' / '2', '23' * '2'); //the / and * operator automatically converts to numerical value because that is the only way that it would work.
 
-let n = '1' + 1; //console.log results in  a string of 11
+n = '1' + 1; //console.log results in  a string of 11
 n = n - 1; // converts the string above into a number which results into 10
 console.log(n);
 
@@ -418,3 +418,24 @@ console.log(5 + 6 + '4' + 9 - 4 - 2);
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
 
+
+//Equality Opperators: = vs == vs ===
+
+const age = 18;
+if (age === 18) console.log('you just became an adult (strict)');
+// === is strict (no type coercion) vs == loose (type coercion)
+if (age == 18) console.log('You just became an adult (loose)');
+
+const favorite = Number(prompt('What is your favorite number?'));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite == 23) { // '23' == 23 string coercion into a number
+    console.log('Cool! 23 is an amazing number!');
+} else if (favorite === 7) {
+    console.log('7 is also a cool number');
+} else {
+    console.log('Number is not 23 or 7');
+}
+
+if (favorite !== 23) console.log('why not 23');
