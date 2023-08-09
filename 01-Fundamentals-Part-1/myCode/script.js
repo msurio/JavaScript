@@ -418,7 +418,7 @@ console.log(5 + 6 + '4' + 9 - 4 - 2);
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-
+/*
 //Equality Opperators: = vs == vs ===
 
 const age = 18;
@@ -439,3 +439,27 @@ if (favorite == 23) { // '23' == 23 string coercion into a number
 }
 
 if (favorite !== 23) console.log('why not 23');
+
+//Practice:
+
+const numNeighbors = prompt('How many neighbor countries does your country have?');
+if (numNeighbors == 1) {
+    console.log('Only 1 Border');
+} else if (numNeighbors > 1) {
+    console.log('More than 1 Border');
+} else {
+    console.log('No Borders');
+}
+
+
+const numNeighbors = Number(prompt('How many neighbor countries does your country have?'));
+if (numNeighbors === 1) {
+    console.log('Only 1 Border');
+} else if (numNeighbors > 1) {
+    console.log('More than 1 Border');
+} else {
+    console.log('No Borders');
+}
+
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
