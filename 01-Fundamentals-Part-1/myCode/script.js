@@ -483,3 +483,34 @@ if (numNeighbors === 1) {
 //A AND B (false) all needs to true
 //A OR B (true) one needs to be true
 //!A AND B (true) all are true
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+//Logical Operators
+// const hasDriversLicense = true; //A
+// const hasGoodVision = true; //B
+
+// console.log(hasDriversLicense && hasGoodVision); //&& is operator for AND
+// console.log(hasDriversLicense || hasGoodVision) // || is operator for OR
+// console.log(!hasDriversLicense) // ! is operator for NOT
+
+// // const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// // if (shouldDrive) {
+// //     console.log('Sarah is able to drive')
+// // } else {
+// //     console.log('Someone else should drive...');
+// // }
+
+// const isTired = false; // C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+
+// if (shouldDrive) {
+//     console.log('Sarah is able to drive')
+// } else {
+//     console.log('Someone else should drive...');
+// }
+
+//Logical Operators Practice:
