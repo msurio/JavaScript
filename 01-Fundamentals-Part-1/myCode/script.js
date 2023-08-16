@@ -485,27 +485,16 @@ if (numNeighbors === 1) {
 //!A AND B (true) all are true
 
 //////////////////////////////////////////////////////////////////////////////////////////////
-
+/*
 //Logical Operators
-// const hasDriversLicense = true; //A
-// const hasGoodVision = true; //B
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
 
-// console.log(hasDriversLicense && hasGoodVision); //&& is operator for AND
-// console.log(hasDriversLicense || hasGoodVision) // || is operator for OR
-// console.log(!hasDriversLicense) // ! is operator for NOT
+console.log(hasDriversLicense && hasGoodVision); //&& is operator for AND
+console.log(hasDriversLicense || hasGoodVision) // || is operator for OR
+console.log(!hasDriversLicense) // ! is operator for NOT
 
-// // const shouldDrive = hasDriversLicense && hasGoodVision;
-
-// // if (shouldDrive) {
-// //     console.log('Sarah is able to drive')
-// // } else {
-// //     console.log('Someone else should drive...');
-// // }
-
-// const isTired = false; // C
-// console.log(hasDriversLicense && hasGoodVision && isTired);
-
-// const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+// const shouldDrive = hasDriversLicense && hasGoodVision;
 
 // if (shouldDrive) {
 //     console.log('Sarah is able to drive')
@@ -513,4 +502,81 @@ if (numNeighbors === 1) {
 //     console.log('Someone else should drive...');
 // }
 
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+
+if (shouldDrive) {
+    console.log('Sarah is able to drive')
+} else {
+    console.log('Someone else should drive...');
+}
+
 //Logical Operators Practice:
+const speakEnglish = true;
+const countryPopulation = 45000000;
+const isIsland = false;
+const newCountry = speakEnglish && countryPopulation < 50000000 && !isIsland;
+
+if (newCountry) {
+    console.log('you should live in America')
+} else {
+    console.log('America does not meet your criteria')
+}
+
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Coding Challenge #3:
+// There are two gymnastics teams, Dolphins and Koalas. They compete against each
+// other 3 times. The winner with the highest average score wins a trophy!
+
+// Your tasks:
+// 1. Calculate the average score for each team, using the test data below
+// 2. Compare the team's average scores to determine the winner of the competition,
+// and print it to the console. Don't forget that there can be a draw, so test for that
+// as well (draw means they have the same average score)
+// 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+// team only wins if it has a higher score than the other team, and the same time a
+// score of at least 100 points. Hint: Use a logical operator to test for minimum
+// score, as well as multiple else-if blocks 😉
+// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+// both teams have the same score and both have a score greater or equal 100
+// points. Otherwise, no team wins the trophy
+
+// Test data:
+// § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+// § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+// § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+
+//Data 1:
+const minimumScore = 100;
+
+const dolphinsAverageScore = (96 + 108 + 89) / 3;
+const koalasAverageScore = (88 + 91 + 110) / 3;
+console.log(dolphinsAverageScore, koalasAverageScore);
+if (dolphinsAverageScore && minimumScore > koalasAverageScore && minimumScore) {
+    console.log("Dolphin's average score is higher than the Koala's average score");
+} else {
+    console.log("Koala's average score is higher than the Dolphin's average score");
+}
+
+//Data 2:
+const dolphinsGameTwo = (92 + 112 + 101) / 3;
+const koalasGameTwo = (109 + 95 + 123) / 3;
+console.log(dolphinsGameTwo, koalasGameTwo);
+if (dolphinsGameTwo && minimumScore > koalasGameTwo && minimumScore) {
+    console.log("Dolphin's average score is higher than the Koala's average score");
+} else {
+    console.log("Koala's average score is higher than the Dolphin's average score");
+}
+
+//Data 3:
+const dolphinsGameThree = (97 + 112 + 101) / 3;
+const koalasGameThree = (109 + 95 + 106) / 3;
+console.log(dolphinsGameThree, koalasGameThree);
+if (dolphinsGameThree > koalasGameThree) {
+    console.log("Dolphin's average score is higher than the Koala's average score");
+} else {
+    console.log("Koala's average score is higher than the Dolphin's average score");
+}
