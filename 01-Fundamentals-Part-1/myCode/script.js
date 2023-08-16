@@ -463,3 +463,23 @@ if (numNeighbors === 1) {
 
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
+//Boolean Logic: the AND, OR & NOT Operators
+//AND operator: true when all are true
+//ex: A) Sarah has a driver's license
+// B)Sarah has good vision
+//Sarah has a driver's License AND good vision
+
+//OR operator: true when ONE is true
+//Sarah has a drvier's license OR good vision
+
+//NOT operator: inverts true/false value
+
+//Boolean Variables: age = 16
+//A: Age is greather or equal 20 (False)
+//B: Age is less than 30 (True)
+
+//Using Operators
+//!A (not A)
+//A AND B (false) all needs to true
+//A OR B (true) one needs to be true
+//!A AND B (true) all are true
