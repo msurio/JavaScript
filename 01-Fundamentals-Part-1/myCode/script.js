@@ -559,7 +559,7 @@ if (dolphinsAverageScore > koalasAverageScore) {
     console.log("Dolphin's average score is higher than the Koala's average score");
 } else if (dolphinsAverageScore < koalasAverageScore) {
     console.log("Koala's average score is higher than the Dolphin's average score");
-} else if (dolphinsAverageScore = koalasAverageScore) {
+} else if (dolphinsAverageScore === koalasAverageScore) {
     console.log("They both win the trophy");
 }
 
@@ -573,7 +573,7 @@ if (dolphinsGameTwo > koalasGameTwo && dolphinsGameTwo >= minimumScore) {
     console.log("Dolphin's average score is higher than the Koala's average score");
 } else if (dolphinsGameTwo && koalasGameTwo >= minimumScore < koalasGameTwo) {
     console.log("Koala's average score is higher than the Dolphin's average score");
-} else if (dolphinsGameTwo = koalasGameTwo) {
+} else if (dolphinsGameTwo === koalasGameTwo) {
     console.log("They Both Win the Trophy");
 }
 
@@ -582,10 +582,18 @@ const dolphinsGameThree = (97 + 112 + 101) / 3;
 const koalasGameThree = (109 + 95 + 106) / 3;
 console.log(dolphinsGameThree, koalasGameThree);
 
-if (dolphinsGameThree > koalasGameThree && dolphinsGameThree >= minimumScore) {
-    console.log("Dolphin's average score is higher than the Koala's average score");
-} else if (dolphinsGameThree && koalasGameThree >= minimumScore < koalasGameThree) {
-    console.log("Koala's average score is higher than the Dolphin's average score");
-} else if (dolphinsGameThree = koalasGameThree) {
-    console.log("No One Wins the Trophy");
-}
+// if (dolphinsGameThree === koalasGameThree) {
+//     console.log("They're the Same");
+// } else {
+//     console.log("You did something wrong in your code...");
+// }
+
+// if (dolphinsGameThree > koalasGameThree && dolphinsGameThree >= minimumScore) {
+//     console.log("Dolphin's average score is higher than the Koala's average score");
+// } else if (dolphinsGameThree && koalasGameThree >= minimumScore < koalasGameThree) {
+//     console.log("Koala's average score is higher than the Dolphin's average score");
+// } else if (dolphinsGameThree === koalasGameThree && dolphinsGameThree >= minimumScore && koalasGameThree >= minimumScore) {
+//     console.log("Both Win the trophy");
+// } else {
+//     console.log("No One Wins the Trophy")
+// }
