@@ -20,7 +20,7 @@ let job2 = 'Teacher';
 //Practice Value and Variables
 let country = 'United States';
 let continent = 'North America';
-let population = 10000000;
+let population = minimumScore00000;
 
 console.log(country);
 console.log(continent);
@@ -148,13 +148,13 @@ console.log(x);
 x += 10; // x = x + 20 --> 15 + 10 = 25
 console.log(x);
 
-x *= 4; // x = x * 4 --> 25 * 4 = 100
+x *= 4; // x = x * 4 --> 25 * 4 = minimumScore
 console.log(x);
 
-x++; // x = x + 1 --> 100 + 1 = 101
+x++; // x = x + 1 --> minimumScore + 1 = 101
 console.log(x);
 
-x--; // x = x - 1 --> 101 - 1 = 100
+x--; // x = x - 1 --> 101 - 1 = minimumScore
 console.log(x);
 
 //comparison operators: >, <, >=, <=
@@ -164,7 +164,7 @@ console.log(ageSarah >= 18); // greater than or equal to 18
 const isFullAge = ageSarah >= 18;
 console.log(now - 1996 > now - 1995);
 //Basic Operator Practice:
-let population = 10000000 //using let because the value is constantly changing and is not a permanent value
+let population = minimumScore00000 //using let because the value is constantly changing and is not a permanent value
 console.log(population / 2);
 population++;
 console.log(population);
@@ -182,7 +182,7 @@ if (population > averagePopulation) {
 let description;
 const continent = 'Europe';
 const country = 'Portugal';
-population = 11000000;
+population = 1minimumScore0000;
 let language = 'Portugese';
 description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
 console.log(description);
@@ -281,7 +281,7 @@ lines`);
 let description;
 const continent = 'Europe';
 const country = 'Portugal';
-population = 11000000;
+population = 1minimumScore0000;
 let language = 'Portugese';
 description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
 console.log(description);
@@ -536,12 +536,12 @@ if (newCountry) {
 // 2. Compare the team's average scores to determine the winner of the competition,
 // and print it to the console. Don't forget that there can be a draw, so test for that
 // as well (draw means they have the same average score)
-// 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+// 3. Bonus 1: Include a requirement for a minimum score of minimumScore. With this rule, a
 // team only wins if it has a higher score than the other team, and the same time a
-// score of at least 100 points. Hint: Use a logical operator to test for minimum
+// score of at least minimumScore points. Hint: Use a logical operator to test for minimum
 // score, as well as multiple else-if blocks 😉
 // 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
-// both teams have the same score and both have a score greater or equal 100
+// both teams have the same score and both have a score greater or equal minimumScore
 // points. Otherwise, no team wins the trophy
 
 // Test data:
@@ -550,33 +550,42 @@ if (newCountry) {
 // § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 //Data 1:
-const minimumScore = 100;
 
 const dolphinsAverageScore = (96 + 108 + 89) / 3;
 const koalasAverageScore = (88 + 91 + 110) / 3;
 console.log(dolphinsAverageScore, koalasAverageScore);
-if (dolphinsAverageScore && minimumScore > koalasAverageScore && minimumScore) {
+
+if (dolphinsAverageScore > koalasAverageScore) {
     console.log("Dolphin's average score is higher than the Koala's average score");
-} else {
+} else if (dolphinsAverageScore < koalasAverageScore) {
     console.log("Koala's average score is higher than the Dolphin's average score");
+} else if (dolphinsAverageScore = koalasAverageScore) {
+    console.log("They both win the trophy");
 }
 
 //Data 2:
 const dolphinsGameTwo = (92 + 112 + 101) / 3;
 const koalasGameTwo = (109 + 95 + 123) / 3;
+const minimumScore = 100;
 console.log(dolphinsGameTwo, koalasGameTwo);
-if (dolphinsGameTwo && minimumScore > koalasGameTwo && minimumScore) {
+
+if (dolphinsGameTwo > koalasGameTwo && dolphinsGameTwo >= minimumScore) {
     console.log("Dolphin's average score is higher than the Koala's average score");
-} else {
+} else if (dolphinsGameTwo && koalasGameTwo >= minimumScore < koalasGameTwo) {
     console.log("Koala's average score is higher than the Dolphin's average score");
+} else if (dolphinsGameTwo = koalasGameTwo) {
+    console.log("They Both Win the Trophy");
 }
 
 //Data 3:
 const dolphinsGameThree = (97 + 112 + 101) / 3;
 const koalasGameThree = (109 + 95 + 106) / 3;
 console.log(dolphinsGameThree, koalasGameThree);
-if (dolphinsGameThree > koalasGameThree) {
+
+if (dolphinsGameThree > koalasGameThree && dolphinsGameThree >= minimumScore) {
     console.log("Dolphin's average score is higher than the Koala's average score");
-} else {
+} else if (dolphinsGameThree && koalasGameThree >= minimumScore < koalasGameThree) {
     console.log("Koala's average score is higher than the Dolphin's average score");
+} else if (dolphinsGameThree = koalasGameThree) {
+    console.log("No One Wins the Trophy");
 }
