@@ -527,6 +527,7 @@ if (newCountry) {
 
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
+/*
 //Coding Challenge #3:
 // There are two gymnastics teams, Dolphins and Koalas. They compete against each
 // other 3 times. The winner with the highest average score wins a trophy!
@@ -590,4 +591,49 @@ if (dolphinsGameThree > koalasGameThree && dolphinsGameThree >= minimumScore) {
     console.log("Both Win the trophy");
 } else {
     console.log("No One Wins the Trophy")
+}
+
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Switch Statement:
+
+const day = 'yoMama';
+
+// switch statement
+switch (day) {
+    case 'monday': //day === 'monday' if true then the code will be executed
+        console.log('Plan course structure');
+        console.log('Go to coding meet up');
+        break; //need to have the breaks to let code to know it stops here
+    case 'tuesday':
+        console.log('prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write Coding Examples');
+        break;
+    case 'friday':
+        console.log('Record Videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('not a valid day');
+}
+//the same thing as above but as an if/else statement
+if (day === 'monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meet up');
+} else if (day === 'tuesday') {
+    console.log('prepare theory videos');
+} else if (day === 'wednesday' || day === 'thursday') {
+    console.log('Write Coding Examples');
+} else if (day === 'friday') {
+    console.log('Record Videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('not a valid day');
 }
