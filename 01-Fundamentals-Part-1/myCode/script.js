@@ -596,7 +596,7 @@ if (dolphinsGameThree > koalasGameThree && dolphinsGameThree >= minimumScore) {
 */
 //////////////////////////////////////////////////////////////////////////////////////////////
 //Switch Statement:
-
+/*
 const day = 'yoMama';
 
 // switch statement
@@ -637,3 +637,32 @@ if (day === 'monday') {
 } else {
     console.log('not a valid day');
 }
+    
+//practice: switch statement:
+
+const language = 'yoMama';
+
+switch (language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log("MOST number of native speakers!");
+        break;
+    case 'spanish':
+        console.log("2nd place in number of native speakers");
+        break;
+    case 'english':
+        console.log("3rd Place");
+        break;
+    case 'hindi':
+        console.log("4th Place");
+        break;
+    case 'arabic':
+        console.log("5th most spoken language");
+        break;
+    default:
+        console.log("Great Language Too 😊 ")
+}
+
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Statements and Expressions
